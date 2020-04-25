@@ -18,7 +18,7 @@ webpack的核心思想：**一切皆为模块**
 
 ### 前端构建演变之路
 
-![image-20200423005931379](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200423005931379.png)
+![](\webpack_image\1.png)
 
 
 
@@ -28,13 +28,13 @@ webpack的核心思想：**一切皆为模块**
 
 可以通过webpack --config 指定配置文件
 
-![image-20200423010604710](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200423010604710.png)
+![image-20200423010604710](\webpack_image\2.png))
 
-![image-20200423010639116](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200423010639116.png)
+![image-20200423010639116](\webpack_image\3.png))
 
-![image-20200423011018269](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200423011018269.png)
+![image-20200423011018269](\webpack_image\4.png))
 
- ![image-20200423012822698](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200423012822698.png)
+ ![image-20200423012822698](\webpack_image\5.png))
 
 
 
@@ -90,7 +90,7 @@ Entry用来指定webpack的打包入口
 
 #### 理解依赖图的含义
 
-![image-20200425190012627](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425190012627.png)
+![image-20200425190012627](\webpack_image\6.png))
 
 
 
@@ -168,7 +168,7 @@ webpack开箱即用只支持`JS`和`JSON`两种文件类型，通过Loaders去�
 
 #### 常见的Loaders有哪些
 
-![image-20200425191339613](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425191339613.png)
+![image-20200425191339613](\webpack_image\7.png))
 
 
 
@@ -209,7 +209,7 @@ module.exports = {
 
 #### 常见的Plugins有哪些
 
-![image-20200425192418976](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425192418976.png)
+![image-20200425192418976](\webpack_image\8.png))
 
 #### Plugins的用法
 
@@ -241,7 +241,7 @@ Mode用来指定当前的构建环境是: production、 development 还是 none
 
 #### Mode的内置函数功能
 
-![image-20200425192825865](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425192825865.png)
+![image-20200425192825865](\webpack_image\9.png))
 
 
 
@@ -253,13 +253,13 @@ Mode用来指定当前的构建环境是: production、 development 还是 none
 npm i @babel/core @babel/preset-env babel-loader -D
 ```
 
-![image-20200425195756817](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425195756817.png)
+![image-20200425195756817](\webpack_image\10.png))
 
 
 
 在.babelrc文件下，增加ES6的babel preset配置
 
-![image-20200425200436882](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425200436882.png)
+![image-20200425200436882](\webpack_image\11.png))
 
 
 
@@ -307,9 +307,6 @@ ReactDOM.render(
 
    ```JS
    npm i style-loader css-loader -D
-   
-   
-   
    ```
 
    `css-loader`用于加载.css文件，并且转换为commonjs对象
@@ -433,7 +430,7 @@ webpack开启监听模式，有两种方式：
 
 webpack中的文件监听使用
 
-![image-20200425213516808](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425213516808.png)
+![image-20200425213516808](\webpack_image\12.png))
 
 运行命令
 
@@ -445,7 +442,7 @@ npm run watch
 
 文件监听的原理分析
 
-![image-20200425213941592](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425213941592.png)
+![image-20200425213941592](\webpack_image\13.png))
 
 
 
@@ -455,17 +452,17 @@ npm run watch
 npm i webpack-dev-server -D
 ```
 
-![image-20200425222345859](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425222345859.png)
+![image-20200425222345859](\webpack_image\14.png))
 
-![image-20200425222514193](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425222514193.png)
+![image-20200425222514193](\webpack_image\15.png))
 
 热更新：使用webpack-dev-middleware
 
-![image-20200425222608378](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425222608378.png)
+![image-20200425222608378](\webpack_image\16.png))
 
 热更新的原理分析
 
-![image-20200425222636202](C:\Users\liuxin\AppData\Roaming\Typora\typora-user-images\image-20200425222636202.png)
+![image-20200425222636202](\webpack_image\17.png))
 
 
 
@@ -498,3 +495,7 @@ hot-module-replacement-plugin 的作用是提供 HMR 的 runtime，并且将 run
 **热更新的两个阶段**
 
 热更新分两个阶段，启动阶段还是依赖磁盘文件去编译。更新阶段是直接内存增量更新的
+
+
+
+![](\webpack_image\1.png)
