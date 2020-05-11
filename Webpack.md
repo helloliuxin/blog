@@ -28,7 +28,7 @@ webpack的核心思想：**一切皆为模块**
 
 可以通过webpack --config 指定配置文件
 
-![image-20200423010604710](\webpack_image\2.png))
+![image-20200423010604710](./webpack_image/2.png))
 
 ![image-20200423010639116](\webpack_image\3.png))
 
